@@ -34,7 +34,7 @@ public class ScheduleController {
         Schedule schedule = new Schedule(scheduleDto.scheduleId(),scheduleDto.date(),scheduleDto.departureTime(),scheduleDto.arrivalTime(),scheduleDto.routeId(),scheduleDto.busId());
         return schedule ;
     }
-
+//hai
     @Autowired
     private BusServiceFeign busServiceFeign;
     @GetMapping("/schedule/{date}/{source}/{destination}")
