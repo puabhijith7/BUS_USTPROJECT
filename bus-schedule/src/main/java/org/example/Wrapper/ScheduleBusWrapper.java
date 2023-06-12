@@ -3,12 +3,14 @@ package org.example.Wrapper;
 
 import org.example.Model.Schedule;
 
+import java.util.List;
+
 public class ScheduleBusWrapper {
 
     private BusDto b;
-    private Schedule s;
+    private List<Schedule> s;
 
-    public ScheduleBusWrapper(BusDto b, Schedule s) {
+    public ScheduleBusWrapper(BusDto b, List<Schedule> s) {
         this.b = b;
         this.s = s;
     }
@@ -22,11 +24,12 @@ public class ScheduleBusWrapper {
         this.b = b;
     }
 
-    public Schedule getS() {
+    public List<Schedule> getS() {
         return s;
     }
 
-    public void setS(Schedule s) {
+    public void setS(List<Schedule> s) {
         this.s = s;
+
     }
 }

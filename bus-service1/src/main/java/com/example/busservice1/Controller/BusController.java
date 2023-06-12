@@ -52,7 +52,7 @@ public class BusController {
     public ResponseEntity<List<BusDto>> getAllBus(){
     List<Bus> bus = busService.getall();
     if(bus.isEmpty())
-    throw new BusNotFoundException();
+     throw new BusNotFoundException();
     List<BusDto> busDto=bus.stream().map(bus1 -> busConvertToDto(bus1)).collect(Collectors.toList());
     return ResponseEntity.status(HttpStatus.OK).body(busDto);
     }
