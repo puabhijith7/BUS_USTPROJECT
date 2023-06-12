@@ -1,0 +1,65 @@
+package com.example.busservice1.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table
+public class RouteDetails {
+	@Id
+    private int stopId;
+    private int stopNumber;
+    private String hault;
+    private int runningTime;
+    private int routeId;
+    public RouteDetails(){}
+
+    public RouteDetails(int stopId, int stopNumber, String hault, int runningTime, int routeId) {
+        this.stopId = stopId;
+        this.stopNumber = stopNumber;
+        this.hault = hault;
+        this.runningTime = runningTime;
+        this.routeId = routeId;
+    }
+
+    public int getStopId() {
+        return stopId;
+    }
+
+    public int getStopNumber() {
+        return stopNumber;
+    }
+
+    public String getHault() {
+        return hault;
+    }
+
+    public int getRunningTime() {
+        return runningTime;
+    }
+
+    public int getRouteId() {
+        return routeId;
+    }
+
+    public void setStopId(int stopId) {
+        this.stopId = stopId;
+    }
+
+    public void setStopNumber(int stopNumber) {
+        this.stopNumber = stopNumber;
+    }
+
+    public void setHault(String hault) {
+        this.hault = hault;
+    }
+
+    public void setRunningTime(int runningTime) {
+        this.runningTime = runningTime;
+    }
+
+    public void setRouteId(int routeId) {
+        this.routeId = routeId;
+    }
+}

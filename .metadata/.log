@@ -1,0 +1,45 @@
+!SESSION 2023-06-09 12:43:25.135 -----------------------------------------------
+eclipse.buildId=4.2.1.201904170946-RELEASE
+java.version=17.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -data C:\\Users\\235814\\Music -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+This is a continuation of log file C:\Users\235814\Music\.metadata\.bak_0.log
+Created Time: 2023-06-09 19:24:12.708
+
+!ENTRY org.eclipse.egit.core 4 0 2023-06-09 19:24:12.708
+!MESSAGE An exception occurred during push on URI https://github.com/puabhijith7/bus-service1.git: https://github.com/puabhijith7/bus-service1.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/puabhijith7/bus-service1.git: not authorized
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:180)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/puabhijith7/bus-service1.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:544)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:439)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1346)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:170)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-06-09 19:24:12.730
+!MESSAGE Can't connect to any repository: https://github.com/puabhijith7/bus-service1.git (https://github.com/puabhijith7/bus-service1.git: not authorized)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-06-09 19:28:11.915
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.oyCHOlyt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-06-09 19:28:11.916
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.oyCHOlyt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-06-09 19:28:11.916
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-06-09 19:28:11.917
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.oyCHOlyt => OK
+
+!ENTRY org.eclipse.core.jobs 2 2 2023-06-09 19:28:14.151
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.ls.eclipse.commons.STS4LanguageServerProcessStreamConnector$1

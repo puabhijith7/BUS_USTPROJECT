@@ -1,0 +1,74 @@
+package com.example.busservice1.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import com.example.busservice1.Service.BusService;
+import com.example.busservice1.Service.RouteDetailsService;
+import com.example.busservice1.Service.RouteService;
+import com.example.busservice1.model.Bus;
+import com.example.busservice1.model.Route;
+import com.example.busservice1.model.RouteDetails;
+
+@RestController
+@RequestMapping("/api/v1/buses")
+public class BusController {
+	
+    @Autowired
+    private BusService busService;
+
+    @Autowired
+    private RouteService routeService;
+    
+    @Autowired
+    private RouteDetailsService routeDetailsService;
+
+   
+
+    @PostMapping("/bus")
+    public ResponseEntity<Bus> create(@RequestBody Bus bus){
+    	
+    	busService.save(bus);
+        return ResponseEntity.status(HttpStatus.CREATED).body(bus);
+    }
+    @GetMapping("/bus")
+    public List<ResponseEntity<Bus>> getall()
+    {
+    	 return busService.getall();
+    }
+    @PostMapping("/route")
+    public ResponseEntity<Route> create(@RequestBody Route route){
+      
+        routeService.save(route);
+        return ResponseEntity.status(HttpStatus.CREATED).body(route);
+    }
+
+    @PostMapping("/routeDetails")
+    public ResponseEntity<RouteDetails> create(@RequestBody RouteDetails routeDetails){
+       
+        routeDetailsService.save(routeDetails);      
+        return ResponseEntity.status(HttpStatus.CREATED).body(routeDetails);
+    }
+    
+    @GetMapping("/routeDetails/{routeId}")
+    public String[] searchforStops(@PathVariable int routeId)
+    {
+    	List<RouteDetails> l=routeDetailsService.search(routeId);
+    	String[] a=new String[l.size()];
+    	for(int i=0;i<l.size();i++)
+    	{
+    		a[i]=l.get(i).getHault();
+    	}
+    	
+    	return  a;
+    }
+
+
+
+
+
+}

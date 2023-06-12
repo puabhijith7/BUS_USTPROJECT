@@ -1,0 +1,5 @@
+package com.example.busservice1.dto;
+
+public class RouteDetailsDto {
+
+}

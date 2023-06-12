@@ -1,0 +1,27 @@
+package com.example.busservice1.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.busservice1.Repo.RouteRepository;
+import com.example.busservice1.model.Route;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class RouteService{
+    @Autowired
+    private RouteRepository routeRepository;
+
+	public void save(Route route) {
+		routeRepository.save(route);
+		
+	}
+
+	public List<Integer> findRouteIdsBySource(String source) {
+		// TODO Auto-generated method stub
+		return routeRepository.findRouteIdsBySource(source);
+	}
+   
+}

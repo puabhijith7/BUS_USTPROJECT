@@ -1,0 +1,126 @@
+package com.example.busservice1.Controller;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.busservice1.Service.RouteDetailsService;
+import com.example.busservice1.dto.BusDto;
+import com.example.busservice1.dto.RouteDetailsDto;
+import com.example.busservice1.dto.RouteDto;
+import com.example.busservice1.model.Bus;
+import com.example.busservice1.model.Route;
+import com.example.busservice1.model.RouteDetails;
+
+@RestController
+@RequestMapping("/api/v1/buses")
+public class RouteDetailsController {
+	 @Autowired
+	    private RouteDetailsService routeDetailsService;
+	 
+	 public RouteDetailsDto routedetailsConvertToDto(RouteDetails rd) {
+		 RouteDetailsDto rdDto = new RouteDetailsDto(rd.getStopId(),rd.getStopNumber(),rd.getHault(),rd.getRunningTime(),rd.getRouteId());
+	    	return rdDto;
+	    	}
+	    
+	 public RouteDetails routedetailsConvertToEntity(RouteDetailsDto routeDetailsDto) {
+		 RouteDetails routeDetails = new RouteDetails(routeDetailsDto.getStopId(),routeDetailsDto.getStopNumber(),routeDetailsDto.getHault(),routeDetailsDto.getRunningTime(),routeDetailsDto.getRouteId());
+		 return routeDetails;
+		 }
+	 
+	  @GetMapping("/routeDetails/r/{source}/{destination}")
+	    public List<Integer> findDistinctRouteIdsByHault(@PathVariable String source,@PathVariable String destination)
+	    {
+	    	List<Integer> list=routeDetailsService.findDistinctRouteIdsByHault(source,destination);
+	    	return list;
+	    }
+	    
+
+	    @GetMapping("/routeDetails/{routeId}")
+	    public String[] searchforStops(@PathVariable int routeId)
+	    {
+	    	List<RouteDetails> l=routeDetailsService.search(routeId);
+	    	String[] a=new String[l.size()];
+	    	for(int i=0;i<l.size();i++)
+	    	{
+	    		a[i]=l.get(i).getHault();
+	    	}
+	    	
+	    	return  a;
+	    }
+	    
+	    @PostMapping("/routeDetails")
+	    public ResponseEntity<RouteDetailsDto> create(@RequestBody RouteDetailsDto rDto){
+	    RouteDetails routedetails = routedetailsConvertToEntity(rDto);
+	    RouteDetails createdRoute = routeDetailsService.save(routedetails);
+	    RouteDetailsDto dto = routedetailsConvertToDto(createdRoute);
+	    return ResponseEntity.status(HttpStatus.CREATED).body(dto);
+	    }
+
+	    @GetMapping("/routeDetails")
+	    public ResponseEntity<List<RouteDetailsDto>> getAllRouteDetails(){
+	    List<RouteDetails> routedetails = routeDetailsService.getall();
+	    if(routedetails.isEmpty())
+	    return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+	    List<RouteDetailsDto> rdDto=routedetails.stream().map(r1 -> routedetailsConvertToDto(r1)).collect(Collectors.toList());
+	    return ResponseEntity.status(HttpStatus.OK).body(rdDto);
+	    }
+
+	    @GetMapping("/routeDetails/{stopId}")
+	    public ResponseEntity<RouteDetailsDto> getrouteDetails(@PathVariable int stopId){
+
+
+	    Optional<RouteDetails> routeOpt = routeDetailsService.getbystopId(stopId);
+	    if(routeOpt.isEmpty())
+	    return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+	    RouteDetails route = routeOpt.get();
+	    RouteDetailsDto dto = routedetailsConvertToDto(route);
+	    return ResponseEntity.status(HttpStatus.OK).body(dto);
+	    }
+	    
+	    @PutMapping("/routeDetails")
+	    public ResponseEntity<RouteDetailsDto> updateroute(@RequestBody RouteDetailsDto route)
+	    {
+	    	Optional<RouteDetails> routeOpt = routeDetailsService.getbystopId(route.getStopId());
+	        if(routeOpt.isEmpty())
+	        return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+	        RouteDetails saved = routedetailsConvertToEntity(route);
+	        RouteDetails save = routeDetailsService.save(saved);
+	        return ResponseEntity.status(HttpStatus.OK).body(routedetailsConvertToDto(save));
+	    	 
+	    }
+	    @DeleteMapping("/routeDetails/{stopId}")
+	    public ResponseEntity<?> deleteroute(@PathVariable int stopId)
+	    {
+	    	Optional<RouteDetails> b=routeDetailsService.getbystopId(stopId);
+	    	 if(b.isPresent())
+	    	 {
+	    		 routeDetailsService.delete(stopId);
+	    		 return ResponseEntity.ok().build();
+	    	 }
+	    	 else
+	    	 {
+	    		 return ResponseEntity.notFound().build();
+	    	 }
+	    }
+	    
+
+
+
+
+
+
+
+}

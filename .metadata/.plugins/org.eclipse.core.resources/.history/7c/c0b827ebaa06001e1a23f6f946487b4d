@@ -1,0 +1,18 @@
+package com.example.busservice1.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table
+public class Route {
+	@Id
+    private int routeId;
+    private String Source;
+    private String Destination;
+    private int totalDistance;
+    private int farePerKm;
+
+   
+}

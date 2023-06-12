@@ -1,0 +1,4 @@
+package com.example.busservice1.dto;
+
+public record BusDto(int busId, int busNo, String regNo, String engineNo, String busType, String busName, int totalSeats) {
+}

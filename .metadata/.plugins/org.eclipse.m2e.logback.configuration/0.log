@@ -1,0 +1,529 @@
+2023-06-09 12:43:30,730 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-09 12:43:50,406 [Worker-0: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.example:bus-service1:0.0.1-SNAPSHOT @ C:\Users\235814\Music\bus-service1\pom.xml.
+2023-06-09 12:43:52,205 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bus-service1/src/main/java
+2023-06-09 12:43:52,206 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bus-service1/src/main/resources
+2023-06-09 12:43:52,207 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bus-service1/src/main/resources
+2023-06-09 12:43:52,208 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bus-service1/src/test/java
+2023-06-09 12:43:52,800 [Worker-0: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
+2023-06-09 12:43:55,423 [Worker-0: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 12:43:55,437 [Worker-0: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 12:43:55,439 [Worker-0: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 12:52:27,936 [Worker-8: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 12:52:27,942 [Worker-8: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 12:52:27,943 [Worker-8: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 12:53:12,169 [Worker-8: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 12:53:12,176 [Worker-8: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 12:53:12,178 [Worker-8: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 12:53:13,276 [Worker-6: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 12:53:13,277 [Worker-6: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 12:53:13,279 [Worker-6: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 12:59:28,410 [Worker-12: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 12:59:28,411 [Worker-12: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 12:59:28,412 [Worker-12: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:16:07,368 [Worker-17: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:16:07,374 [Worker-17: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:16:07,377 [Worker-17: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:20:23,779 [Worker-15: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:20:23,787 [Worker-15: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:20:23,789 [Worker-15: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:27:37,779 [Worker-15: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:27:37,785 [Worker-15: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:27:37,788 [Worker-15: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:27:44,112 [Worker-11: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:27:44,118 [Worker-11: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:27:44,119 [Worker-11: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:27:53,230 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:27:53,234 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:27:53,236 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:29:39,304 [Worker-24: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:29:39,314 [Worker-24: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:29:39,316 [Worker-24: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:30:02,934 [Worker-11: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:30:02,939 [Worker-11: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:30:02,941 [Worker-11: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:30:11,895 [Worker-26: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:30:11,899 [Worker-26: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:30:11,900 [Worker-26: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:31:03,017 [Worker-27: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:31:03,021 [Worker-27: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:31:03,023 [Worker-27: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:31:32,304 [Worker-15: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:31:32,308 [Worker-15: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:31:32,310 [Worker-15: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:31:48,966 [Worker-15: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:31:48,970 [Worker-15: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:31:48,972 [Worker-15: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:31:54,702 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:31:54,705 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:31:54,706 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:32:03,111 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:32:03,117 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:32:03,119 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:35:42,824 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:35:42,829 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:35:42,831 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:38:02,061 [Worker-26: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:38:02,065 [Worker-26: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:38:02,066 [Worker-26: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:38:11,651 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:38:11,657 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:38:11,658 [Worker-22: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:39:35,595 [Worker-28: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:39:35,600 [Worker-28: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:39:35,601 [Worker-28: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:42:02,758 [Worker-29: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:42:02,763 [Worker-29: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:42:02,765 [Worker-29: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:42:49,432 [Worker-29: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:42:49,439 [Worker-29: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:42:49,440 [Worker-29: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:43:41,288 [Worker-25: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:43:41,293 [Worker-25: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:43:41,294 [Worker-25: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:48:38,311 [Worker-32: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:48:38,316 [Worker-32: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:48:38,318 [Worker-32: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 14:48:47,667 [Worker-32: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 14:48:47,671 [Worker-32: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 14:48:47,673 [Worker-32: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 15:18:55,517 [Worker-40: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 15:18:55,530 [Worker-40: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 15:18:55,531 [Worker-40: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 15:19:25,674 [Worker-37: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 15:19:25,684 [Worker-37: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 15:19:25,685 [Worker-37: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 15:20:08,696 [Worker-37: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 15:20:08,701 [Worker-37: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 15:20:08,702 [Worker-37: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 15:35:17,990 [Worker-48: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 15:35:17,995 [Worker-48: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 15:35:17,996 [Worker-48: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 15:42:34,415 [Worker-52: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 15:42:34,420 [Worker-52: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 15:42:34,421 [Worker-52: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 15:43:00,706 [Worker-50: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 15:43:00,711 [Worker-50: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 15:43:00,713 [Worker-50: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 15:44:01,783 [Worker-52: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 15:44:01,786 [Worker-52: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 15:44:01,788 [Worker-52: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 15:44:27,697 [Worker-52: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 15:44:27,702 [Worker-52: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 15:44:27,703 [Worker-52: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 15:44:37,731 [Worker-47: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 15:44:37,734 [Worker-47: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 15:44:37,735 [Worker-47: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 15:44:58,940 [Worker-51: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 15:44:58,943 [Worker-51: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 15:44:58,945 [Worker-51: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 15:45:41,292 [Worker-53: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 15:45:41,301 [Worker-53: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 15:45:41,304 [Worker-53: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 15:46:27,501 [Worker-52: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 15:46:27,506 [Worker-52: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 15:46:27,507 [Worker-52: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 15:53:44,439 [Worker-53: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 15:53:44,444 [Worker-53: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 15:53:44,446 [Worker-53: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 16:18:27,989 [Worker-64: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 16:18:27,998 [Worker-64: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 16:18:28,000 [Worker-64: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 16:18:49,045 [Worker-62: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 16:18:49,050 [Worker-62: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 16:18:49,052 [Worker-62: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 16:19:26,295 [Worker-65: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 16:19:26,303 [Worker-65: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 16:19:26,304 [Worker-65: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 16:20:35,416 [Worker-59: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 16:20:35,420 [Worker-59: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 16:20:35,421 [Worker-59: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 16:55:04,708 [Worker-67: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 16:55:04,719 [Worker-67: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 16:55:04,720 [Worker-67: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 16:55:33,915 [Worker-67: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 16:55:33,922 [Worker-67: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 16:55:33,923 [Worker-67: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 16:58:39,412 [Worker-68: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 16:58:39,419 [Worker-68: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 16:58:39,422 [Worker-68: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:03:51,078 [Worker-71: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:03:51,081 [Worker-71: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:03:51,082 [Worker-71: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:15:16,268 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:15:16,273 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:15:16,274 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:15:35,475 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:15:35,480 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:15:35,482 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:15:53,581 [Worker-73: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:15:53,587 [Worker-73: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:15:53,588 [Worker-73: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:16:19,206 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:16:19,213 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:16:19,215 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:16:40,459 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:16:40,464 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:16:40,466 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:17:33,905 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:17:33,909 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:17:33,910 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:17:57,120 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:17:57,125 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:17:57,126 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:18:13,682 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:18:13,687 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:18:13,689 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:18:32,671 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:18:32,681 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:18:32,683 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:18:43,024 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:18:43,030 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:18:43,031 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:18:55,183 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:18:55,189 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:18:55,191 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:19:23,292 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:19:23,296 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:19:23,297 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:20:11,206 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:20:11,210 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:20:11,212 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:20:18,537 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:20:18,541 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:20:18,543 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:20:34,846 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:20:34,850 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:20:34,851 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:21:05,327 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:21:05,337 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:21:05,339 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:22:04,880 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:22:04,886 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:22:04,887 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:23:19,461 [Worker-73: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:23:19,465 [Worker-73: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:23:19,467 [Worker-73: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:24:10,187 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:24:10,192 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:24:10,193 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:24:14,830 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:24:14,835 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:24:14,836 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:24:58,620 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:24:58,623 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:24:58,624 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:25:11,487 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:25:11,490 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:25:11,491 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:26:01,814 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:26:01,828 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:26:01,830 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:26:27,644 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:26:27,649 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:26:27,650 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:26:39,720 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:26:39,724 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:26:39,725 [Worker-76: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:27:47,861 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:27:47,866 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:27:47,867 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:28:21,225 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:28:21,230 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:28:21,231 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:28:33,403 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:28:33,407 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:28:33,408 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:28:39,785 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:28:39,787 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:28:39,788 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:29:17,657 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:29:17,662 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:29:17,663 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:29:27,021 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:29:27,026 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:29:27,028 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:29:32,566 [Worker-73: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:29:32,570 [Worker-73: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:29:32,571 [Worker-73: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:33:19,550 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:33:19,554 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:33:19,555 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:35:22,363 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:35:22,367 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:35:22,368 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:35:54,403 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:35:54,410 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:35:54,411 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:39:26,352 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:39:26,358 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:39:26,359 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:40:20,106 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:40:20,110 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:40:20,111 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:40:52,628 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:40:52,631 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:40:52,631 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:45:15,010 [Worker-83: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:45:15,015 [Worker-83: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:45:15,017 [Worker-83: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:45:51,308 [Worker-81: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:45:51,312 [Worker-81: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:45:51,313 [Worker-81: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:47:11,265 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:47:11,270 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:47:11,271 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:51:01,602 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:51:01,607 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:51:01,609 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:51:05,189 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:51:05,194 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:51:05,196 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:52:06,142 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:52:06,149 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:52:06,151 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:53:05,710 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:53:05,715 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:53:05,716 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:53:10,131 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:53:10,135 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:53:10,136 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:53:27,671 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:53:27,676 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:53:27,677 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:55:32,682 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:55:32,693 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:55:32,694 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:56:00,343 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:56:00,356 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:56:00,357 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:58:44,264 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:58:44,268 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:58:44,270 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 17:58:55,746 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 17:58:55,750 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 17:58:55,751 [Worker-77: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:00:12,509 [Worker-84: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:00:12,515 [Worker-84: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:00:12,516 [Worker-84: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:01:42,627 [Worker-84: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:01:42,642 [Worker-84: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:01:42,644 [Worker-84: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:01:53,677 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:01:53,681 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:01:53,682 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:02:40,769 [Worker-84: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:02:40,775 [Worker-84: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:02:40,777 [Worker-84: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:06:57,196 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:06:57,202 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:06:57,204 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:07:10,184 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:07:10,190 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:07:10,191 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:07:50,159 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:07:50,163 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:07:50,166 [Worker-78: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:08:08,778 [Worker-84: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:08:08,783 [Worker-84: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:08:08,784 [Worker-84: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:08:55,780 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:08:55,787 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:08:55,789 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:09:26,788 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:09:26,795 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:09:26,796 [Worker-82: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:09:42,632 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:09:42,637 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:09:42,638 [Worker-75: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:09:50,616 [Worker-81: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:09:50,622 [Worker-81: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:09:50,624 [Worker-81: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:10:11,356 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:10:11,360 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:10:11,363 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:10:42,148 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:10:42,158 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:10:42,161 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:15:34,874 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:15:34,880 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:15:34,882 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:18:26,910 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:18:26,916 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:18:26,917 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:21:56,720 [Worker-88: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:21:56,725 [Worker-88: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:21:56,726 [Worker-88: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:22:06,516 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:22:06,520 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:22:06,521 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:22:15,104 [Worker-88: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:22:15,108 [Worker-88: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:22:15,110 [Worker-88: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:22:26,102 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:22:26,107 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:22:26,109 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:22:42,398 [Worker-88: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:22:42,404 [Worker-88: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:22:42,406 [Worker-88: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:23:28,482 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:23:28,487 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:23:28,488 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:23:31,425 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:23:31,429 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:23:31,430 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:23:47,561 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:23:47,574 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:23:47,577 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:24:57,618 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:24:57,623 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:24:57,624 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:27:55,863 [Worker-89: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:27:55,867 [Worker-89: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:27:55,869 [Worker-89: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:28:09,352 [Worker-88: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:28:09,358 [Worker-88: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:28:09,359 [Worker-88: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:29:00,665 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:29:00,676 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:29:00,678 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:32:34,314 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:32:34,319 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:32:34,321 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:32:46,135 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:32:46,141 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:32:46,142 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:32:49,937 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:32:49,941 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:32:49,942 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:33:12,156 [Worker-89: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:33:12,162 [Worker-89: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:33:12,163 [Worker-89: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:33:50,863 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:33:50,868 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:33:50,869 [Worker-79: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:34:04,699 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:34:04,703 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:34:04,704 [Worker-85: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:34:16,586 [Worker-89: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:34:16,594 [Worker-89: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:34:16,596 [Worker-89: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:34:28,534 [Worker-90: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:34:28,540 [Worker-90: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:34:28,541 [Worker-90: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:34:36,102 [Worker-90: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:34:36,106 [Worker-90: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:34:36,107 [Worker-90: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:34:49,741 [Worker-89: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:34:49,745 [Worker-89: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:34:49,746 [Worker-89: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:34:52,024 [Worker-90: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:34:52,027 [Worker-90: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:34:52,028 [Worker-90: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:35:02,831 [Worker-90: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:35:02,835 [Worker-90: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:35:02,836 [Worker-90: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:38:45,763 [Worker-95: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:38:45,768 [Worker-95: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:38:45,770 [Worker-95: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:45:05,776 [Worker-93: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:45:05,781 [Worker-93: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:45:05,782 [Worker-93: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:45:22,317 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:45:22,322 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:45:22,323 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:45:55,930 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:45:55,938 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:45:55,940 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:46:30,228 [Worker-91: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:46:30,232 [Worker-91: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:46:30,233 [Worker-91: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:47:09,446 [Worker-94: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:47:09,455 [Worker-94: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:47:09,458 [Worker-94: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:48:57,254 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:48:57,258 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:48:57,259 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:49:38,710 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:49:38,714 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:49:38,715 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:49:56,027 [Worker-97: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:49:56,031 [Worker-97: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:49:56,032 [Worker-97: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:50:38,714 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:50:38,718 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:50:38,720 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:50:46,175 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:50:46,180 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:50:46,181 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:51:21,063 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:51:21,067 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:51:21,068 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:51:33,290 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:51:33,294 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:51:33,294 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:51:58,213 [Worker-99: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:51:58,221 [Worker-99: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:51:58,222 [Worker-99: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:52:04,615 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:52:04,620 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:52:04,622 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:52:22,004 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:52:22,009 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:52:22,010 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:52:46,674 [Worker-99: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:52:46,677 [Worker-99: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:52:46,681 [Worker-99: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:53:06,939 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:53:06,943 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:53:06,944 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:53:57,806 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:53:57,811 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:53:57,813 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:54:23,405 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:54:23,409 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:54:23,410 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:54:27,382 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:54:27,389 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:54:27,391 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:54:32,313 [Worker-99: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:54:32,316 [Worker-99: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:54:32,316 [Worker-99: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:54:36,748 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:54:36,753 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:54:36,754 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:55:15,501 [Worker-97: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:55:15,505 [Worker-97: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:55:15,506 [Worker-97: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:57:03,931 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:57:03,936 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:57:03,936 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 18:57:56,854 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 18:57:56,860 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 18:57:56,861 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 19:01:24,431 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 19:01:24,435 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 19:01:24,436 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 19:05:42,764 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 19:05:42,767 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 19:05:42,768 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 19:08:29,690 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 19:08:29,693 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 19:08:29,694 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 19:08:47,094 [Worker-98: Launching bus-service1 - BusService1Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 19:08:47,098 [Worker-98: Launching bus-service1 - BusService1Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 19:08:47,099 [Worker-98: Launching bus-service1 - BusService1Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 19:10:44,109 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 19:10:44,114 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 19:10:44,116 [Worker-92: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 19:11:57,736 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 19:11:57,745 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 19:11:57,747 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 19:12:54,866 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 19:12:54,869 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 19:12:54,869 [Worker-98: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 19:13:09,655 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 19:13:09,664 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 19:13:09,665 [Worker-87: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources
+2023-06-09 19:15:01,223 [Worker-100: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-09 19:15:01,228 [Worker-100: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-09 19:15:01,230 [Worker-100: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\235814\Music\bus-service1\src\test\resources

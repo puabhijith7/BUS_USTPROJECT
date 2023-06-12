@@ -1,0 +1,56 @@
+package com.example.busservice1.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table
+public class Route {
+	@Id
+   private int routeId;
+   private String routeName;
+    private int totalDistance;
+    private int farePerKm;
+
+    public Route() {}
+
+    public Route(int routeId, String routeName, int totalDistance, int farePerKm) {
+        this.routeId = routeId;
+        this.routeName = routeName;
+        this.totalDistance = totalDistance;
+        this.farePerKm = farePerKm;
+    }
+
+    public int getRouteId() {
+        return routeId;
+    }
+
+    public void setRouteId(int routeId) {
+        this.routeId = routeId;
+    }
+
+    public String getRouteName() {
+        return routeName;
+    }
+
+    public void setRouteName(String routeName) {
+        this.routeName = routeName;
+    }
+
+    public int getTotalDistance() {
+        return totalDistance;
+    }
+
+    public void setTotalDistance(int totalDistance) {
+        this.totalDistance = totalDistance;
+    }
+
+    public int getFarePerKm() {
+        return farePerKm;
+    }
+
+    public void setFarePerKm(int farePerKm) {
+        this.farePerKm = farePerKm;
+    }
+}

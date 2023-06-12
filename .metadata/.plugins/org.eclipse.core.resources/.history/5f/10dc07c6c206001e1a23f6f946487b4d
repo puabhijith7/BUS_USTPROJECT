@@ -1,0 +1,15 @@
+package com.example.busservice1.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.busservice1.Service.RouteDetailsService;
+
+@RestController
+@RequestMapping("/api/v1/buses")
+public class RouteDetailsController {
+	 @Autowired
+	    private RouteDetailsService routeDetailsService;
+
+}

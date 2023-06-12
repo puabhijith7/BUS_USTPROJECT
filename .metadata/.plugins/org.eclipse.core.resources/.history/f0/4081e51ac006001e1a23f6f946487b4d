@@ -1,0 +1,36 @@
+package com.example.busservice1.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.example.busservice1.Service.RouteService;
+import com.example.busservice1.dto.RouteDto;
+import com.example.busservice1.model.Route;
+
+public class RouteController {
+	
+	@Autowired
+    private RouteService routeService;
+	
+	public RouteDto routeConvertToDto(Route route) {
+		return new RouteDto(route.getRouteId(), route.getSource(),route.getDestination(), route.getTotalDistance(), route.getFarePerKm());
+		}
+
+		public Route routeConvertToEntity(RouteDto routeDto) {
+		Route route = new Route(routeDto.routeId(),routeDto.source(),routeDto.destination(),routeDto.totalDistance(),routeDto.farePerKm());
+		return route;
+		}
+	
+	
+	
+	 @PostMapping("/route")
+	    public ResponseEntity<Route> create(@RequestBody Route route){
+	      
+	        routeService.save(route);
+	        return ResponseEntity.status(HttpStatus.CREATED).body(route);
+	    }
+
+}

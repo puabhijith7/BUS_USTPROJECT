@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.springframework.data.repository.query.Param"/>
+    <fullyQualifiedTypeName name="com.example.busservice1.dto.BusDto"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="com.example.busservice1.dto.RouteDto"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="com.example.busservice1.dto.RouteDetailsDto"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="com.example.busservice1.Exception.BusAlreadyException"/>
+    <fullyQualifiedTypeName name="com.example.busservice1.Exception.BusNotFoundException"/>
+    <fullyQualifiedTypeName name="com.example.busservice1.Exception.RouteAlreadyExistException"/>
+    <fullyQualifiedTypeName name="com.example.busservice1.Exception.RouteNotFoundException"/>
+    <fullyQualifiedTypeName name="com.example.busservice1.Exception.RouteDetailsAlreadyExistException"/>
+    <fullyQualifiedTypeName name="com.example.busservice1.Exception.RouteDetialsNotFoundException"/>
+</qualifiedTypeNameHistroy>

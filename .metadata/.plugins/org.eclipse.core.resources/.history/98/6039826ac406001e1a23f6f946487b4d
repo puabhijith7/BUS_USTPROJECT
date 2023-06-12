@@ -1,0 +1,33 @@
+package com.example.busservice1.Service;
+
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.busservice1.Repo.RouteDetailsRepository;
+import com.example.busservice1.model.RouteDetails;
+
+@Service
+public class RouteDetailsService{
+    @Autowired
+    private RouteDetailsRepository routeDetailsRepo;
+
+	public void save(RouteDetails routeDetails) {
+		routeDetailsRepo.save(routeDetails);
+		
+	}
+
+	public List<RouteDetails> search(int routeId) {
+		// TODO Auto-generated method stub
+		List<RouteDetails> list=routeDetailsRepo.findByrouteId(routeId);
+		return list;
+	}
+
+	public List<Integer> findDistinctRouteIdsByHault(String source,String destination) {
+		// TODO Auto-generated method stub
+		return routeDetailsRepo.findDistinctRouteIdsByHault(source,destination);
+	}
+    
+}
