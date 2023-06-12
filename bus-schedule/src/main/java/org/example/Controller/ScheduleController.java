@@ -4,7 +4,7 @@ package org.example.Controller;
 import org.example.Dto.ScheduleDto;
 import org.example.Model.Schedule;
 import org.example.Service.ScheduleService;
-import org.example.Wrapper.ScheduleBusWrapper;
+import org.example.Wrapper.BusDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -37,6 +37,13 @@ public class ScheduleController {
     public ResponseEntity<List<Schedule>> getbyDate(@PathVariable String date, @PathVariable String source, @PathVariable String destination) {
         LocalDate date1 = LocalDate.parse(date);
         return ResponseEntity.ok().body(scheduleService.getbydate(date1, source, destination));
+
+    }
+//FOR FEIGN-BUS
+    @GetMapping("/schedule/bus/{date}/{source}/{destination}")
+    public ResponseEntity<List<BusDto>> getbyDateBus(@PathVariable String date, @PathVariable String source, @PathVariable String destination) {
+        LocalDate date1 = LocalDate.parse(date);
+        return ResponseEntity.ok().body(scheduleService.getbydateBus(date1, source, destination));
 
     }
 }

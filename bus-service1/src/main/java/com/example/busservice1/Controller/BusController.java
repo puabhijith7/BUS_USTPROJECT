@@ -58,7 +58,7 @@ public class BusController {
     }
 
     @GetMapping("/bus/{busId}")
-    public ResponseEntity<BusDto> getBus(@PathVariable int busId){
+    public BusDto getBus(@PathVariable int busId){
 
 
     Optional<Bus> busOpt = busService.getbybusId(busId);
@@ -66,7 +66,7 @@ public class BusController {
     	throw new BusNotFoundException();
     Bus bus = busOpt.get();
     BusDto dto = busConvertToDto(bus);
-    return ResponseEntity.status(HttpStatus.OK).body(dto);
+    return dto;
     }
     
 
