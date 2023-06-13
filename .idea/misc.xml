@@ -9,11 +9,14 @@
         <option value="$PROJECT_DIR$/bus-service1/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-jwt-without-JPA/spring-boot-jwt/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/EurekaServer/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/pom.xml" />
         <option value="$PROJECT_DIR$/bus-schedule/api-gateway/pom.xml" />
       </set>
     </option>

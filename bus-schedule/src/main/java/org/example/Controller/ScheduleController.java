@@ -31,7 +31,7 @@ public class ScheduleController {
         Schedule schedule = new Schedule(scheduleDto.scheduleId(), scheduleDto.date(), scheduleDto.departureTime(), scheduleDto.arrivalTime(), scheduleDto.routeId(), scheduleDto.busId());
         return schedule;
     }
-//hai
+
 
     @GetMapping("/schedule/{date}/{source}/{destination}")
     public ResponseEntity<List<Schedule>> getbyDate(@PathVariable String date, @PathVariable String source, @PathVariable String destination) {
@@ -39,7 +39,7 @@ public class ScheduleController {
         return ResponseEntity.ok().body(scheduleService.getbydate(date1, source, destination));
 
     }
-//FOR FEIGN-BUS
+       //FOR FEIGN-BUS
     @GetMapping("/schedule/bus/{date}/{source}/{destination}")
     public ResponseEntity<List<BusDto>> getbyDateBus(@PathVariable String date, @PathVariable String source, @PathVariable String destination) {
         LocalDate date1 = LocalDate.parse(date);

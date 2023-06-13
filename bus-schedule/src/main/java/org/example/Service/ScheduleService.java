@@ -38,33 +38,13 @@ public class ScheduleService {
                 }
             }
         }
-
-//comparing routeid with the routeid in that particular date and returning the
-// busids
-
-
-
-
-        for (Schedule schedule : scheuleList) {
-            int schRoueId = schedule.getRouteId();
-                if (routeid.contains(schRoueId)) {
-                    busid.add(schedule.getBusId());
-                }
-            }
-
-
-
         //comparing routeid with the routeid in that particular date and returning the
         // schedules
         List<Schedule> s1=new ArrayList<Schedule>();
-        for(int i=0;i<scheuleList.size();i++)
-        {
-            for(int j=0;j<routeid.size();j++)
-            {
-                if(scheuleList.get(i).getRouteId()==routeid.get(j))
-                {
-                    s1.add(scheuleList.get(i));
-                }
+        for (Schedule schedule : scheuleList) {
+            int schRoueId = schedule.getRouteId();
+            if (routeid.contains(schRoueId)) {
+                s1.add(schedule);
             }
         }
         if(s1.isEmpty())
