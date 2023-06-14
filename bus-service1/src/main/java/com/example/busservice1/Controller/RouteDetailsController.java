@@ -22,12 +22,12 @@ public class RouteDetailsController {
 	    private RouteDetailsService routeDetailsService;
 	 
 	 public RouteDetailsDto routedetailsConvertToDto(RouteDetails rd) {
-		 RouteDetailsDto rdDto = new RouteDetailsDto(rd.getStopId(),rd.getStopNumber(),rd.getHault(),rd.getRunningTime(),rd.getRouteId());
+		 RouteDetailsDto rdDto = new RouteDetailsDto(rd.getStopId(),rd.getStopNumber(),rd.getHault(),rd.getDistFromSource(),rd.getRunningTime(), rd.getRouteId());
 	    	return rdDto;
 	    	}
 	    
 	 public RouteDetails routedetailsConvertToEntity(RouteDetailsDto routeDetailsDto) {
-		 RouteDetails routeDetails = new RouteDetails(routeDetailsDto.getStopId(),routeDetailsDto.getStopNumber(),routeDetailsDto.getHault(),routeDetailsDto.getRunningTime(),routeDetailsDto.getRouteId());
+		 RouteDetails routeDetails = new RouteDetails(routeDetailsDto.getStopId(),routeDetailsDto.getStopNumber(),routeDetailsDto.getHault(),routeDetailsDto.getDistFromSource(),routeDetailsDto.getRunningTime(),routeDetailsDto.getRouteId());
 		 return routeDetails;
 		 }
 	 

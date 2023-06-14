@@ -23,4 +23,7 @@ public interface BusServiceFeign {
 
     @GetMapping("api/v1/buses/routeDetails/routeId/{routeId}")
     public List<RouteDetailsDto> getrouteDetailsByRouteId(@PathVariable int routeId);
+
+    @GetMapping("api/v1/buses/route/fare/{routeId}")
+    public Integer getFare(@PathVariable int routeId);
 }

@@ -48,6 +48,13 @@ public class ScheduleController {
         return ResponseEntity.ok().body(scheduleService.getbydateBus(date1, source, destination));
 
     }
+
+    //for FARE
+    @GetMapping("/schedule/fare/{date}/{source}/{destination}")
+    public ResponseEntity<List<Float>> getFare(@PathVariable String date, @PathVariable String source, @PathVariable String destination) {
+        LocalDate date1 = LocalDate.parse(date);
+        return ResponseEntity.ok().body(scheduleService.getFare(date1, source, destination));
+    }
     @PostMapping("/schedule/post")
     public ResponseEntity<?> createSchedule(@RequestBody ScheduleDto scheduleDto){
         Schedule schedule = convertToEntity(scheduleDto);

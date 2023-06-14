@@ -73,20 +73,12 @@ public class RouteController {
 		        return ResponseEntity.status(HttpStatus.OK).body(routeConvertToDto(save));
 		    	 
 		    }
-		    @DeleteMapping("/route/{routeId}")
-		    public ResponseEntity<?> deleteroute(@PathVariable int routeId)
-		    {
-		    	Optional<Route> b=routeService.getbyrouteId(routeId);
-		    	 if(b.isPresent())
-		    	 {
-		    		 routeService.delete(routeId);
-		    		 return ResponseEntity.ok().build();
-		    	 }
-		    	 else
-		    	 {
-		    		 throw new RouteNotFoundException();
-		    	 }
-		    }
+		   @GetMapping("/route/fare/{routeId}")
+	      public Integer getFare(@PathVariable int routeId)
+		   {
+			   return routeService.getFare(routeId);
+		   }
+
 		    
 	
 	

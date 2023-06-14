@@ -35,6 +35,12 @@ public class RouteService{
 		
 	}
 
+    public Integer getFare(int routeId) {
+		Optional<Route> r=routeRepository.findById(routeId);
+		return r.get().getFarePerKm();
+
+    }
+
 //	public List<Integer> findRouteIdsBySource(String source) {
 //		// TODO Auto-generated method stub
 //		return routeRepository.findRouteIdsBySource(source);
