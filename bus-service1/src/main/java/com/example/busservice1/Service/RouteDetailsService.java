@@ -61,4 +61,8 @@ public class RouteDetailsService{
 	public List<RouteDetails> getbyrouteId(int routeId) {
 		return routeDetailsRepo.findByrouteId(routeId);
 	}
+
+    public List<String> findDistinctHaults() {
+		return routeDetailsRepo.findDistinctHaults();
+    }
 }

@@ -135,6 +135,15 @@ public class RouteDetailsController {
 		return rdDto;
 	}
 
+	@GetMapping("/routeDetails/all")
+	public List<String> getallstops()
+	{
+		return routeDetailsService.findDistinctHaults();
+	}
+
+
+
+
 
 
 
