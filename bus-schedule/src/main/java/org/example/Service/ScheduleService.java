@@ -1,10 +1,14 @@
 package org.example.Service;
 
+import jakarta.persistence.criteria.CriteriaBuilder;
 import org.example.Exception.ScheduleNotFoundException;
 import org.example.Feign.BusServiceFeign;
 import org.example.Model.Schedule;
+import org.example.Model.Seat;
 import org.example.Repo.ScheduleRepo;
+import org.example.Repo.SeatRepo;
 import org.example.Wrapper.BusDto;
+import org.example.Wrapper.RouteDetailsDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -90,6 +94,35 @@ public class ScheduleService {
         }
         return busDtoList;
     }
-
+    @Autowired
+    private SeatRepo seatRepo;
+    public void save(Schedule schedule) {
+        String fhault ="",thault="";
+        scheduleRepo.save(schedule);
+        BusDto b=busServiceFeign.getBus(schedule.getBusId());
+        List<RouteDetailsDto> rdto=busServiceFeign.getrouteDetailsByRouteId(schedule.getRouteId());
+        List<Integer> l=busServiceFeign.searchforStopsbyRouteId(schedule.getRouteId());
+        for(int currSeat=1;currSeat<=b.getTotalSeats();currSeat++)
+        {
+           for(int j=l.get(0);j<l.get(1);j++)
+           {
+               for (RouteDetailsDto rd:rdto) {
+                   if(rd.getStopNumber()==j)
+                       fhault = rd.getHault();
+                   if(rd.getStopNumber()==j+1)
+                       thault = rd.getHault();
+               }
+               Seat seat=new Seat();
+               System.out.println(l.get(0));
+               System.out.println(l.get(1));
+               seat.setSchedule_id(schedule.getScheduleId());
+               seat.setfHault(fhault);
+               seat.settHault(thault);
+               seat.setStatus(0);
+               seat.setSeat_no(currSeat);
+               seatRepo.save(seat);
+           }
+        }
+    }
 }
 

@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/Security/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-jwt-without-JPA/spring-boot-jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-jwt/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -5,11 +5,13 @@ import org.example.Dto.ScheduleDto;
 import org.example.Model.Schedule;
 import org.example.Service.ScheduleService;
 import org.example.Wrapper.BusDto;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -45,5 +47,11 @@ public class ScheduleController {
         LocalDate date1 = LocalDate.parse(date);
         return ResponseEntity.ok().body(scheduleService.getbydateBus(date1, source, destination));
 
+    }
+    @PostMapping("/schedule/post")
+    public ResponseEntity<?> createSchedule(@RequestBody ScheduleDto scheduleDto){
+        Schedule schedule = convertToEntity(scheduleDto);
+        scheduleService.save(schedule);
+        return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 }

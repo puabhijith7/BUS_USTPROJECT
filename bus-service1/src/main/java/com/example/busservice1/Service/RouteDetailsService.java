@@ -1,6 +1,7 @@
 package com.example.busservice1.Service;
 
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -46,5 +47,18 @@ public class RouteDetailsService{
 		// TODO Auto-generated method stub
 		 routeDetailsRepo.deleteById(stopId);
 	}
-    
+
+    public List<Integer> searchforStopsbyRouteId(int routeId) {
+		List<RouteDetails> list=routeDetailsRepo.findByrouteId(routeId);
+		List<Integer> stops=new ArrayList<>();
+
+			stops.add(list.get(0).getStopNumber());
+			stops.add(list.get(list.size()-1).getStopNumber());
+			return stops;
+
+    }
+
+	public List<RouteDetails> getbyrouteId(int routeId) {
+		return routeDetailsRepo.findByrouteId(routeId);
+	}
 }

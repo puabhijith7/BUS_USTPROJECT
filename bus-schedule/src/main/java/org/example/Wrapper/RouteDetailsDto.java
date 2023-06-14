@@ -1,21 +1,18 @@
-package com.example.busservice1.model;
+package org.example.Wrapper;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
-@Entity
-@Table
-public class RouteDetails {
-	@Id
+
+
+public class RouteDetailsDto {
+	
     private int stopId;
     private int stopNumber;
-    private String hault;//stop_name
+    private String hault;
     private int runningTime;
     private int routeId;
-    public RouteDetails(){}
+    public RouteDetailsDto(){}
 
-    public RouteDetails(int stopId, int stopNumber, String hault, int runningTime, int routeId) {
+    public RouteDetailsDto(int stopId, int stopNumber, String hault, int runningTime, int routeId) {
         this.stopId = stopId;
         this.stopNumber = stopNumber;
         this.hault = hault;
@@ -62,6 +59,4 @@ public class RouteDetails {
     public void setRouteId(int routeId) {
         this.routeId = routeId;
     }
-
-	
 }

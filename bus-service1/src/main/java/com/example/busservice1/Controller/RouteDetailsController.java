@@ -118,6 +118,25 @@ public class RouteDetailsController {
 //	    }
 
 
+	  @GetMapping("/routeDetails/r/{routeId}")
+	 public List<Integer> searchforStopsbyRouteId(@PathVariable int routeId)
+	  {
+		  return(routeDetailsService.searchforStopsbyRouteId(routeId));
+	  }
+
+	@GetMapping("/routeDetails/routeId/{routeId}")
+	public List<RouteDetailsDto> getrouteDetailsByRouteId(@PathVariable int routeId){
+
+
+		List<RouteDetails> routeOpt = routeDetailsService.getbyrouteId(routeId);
+		if(routeOpt.isEmpty())
+			throw new RouteDetialsNotFoundException();
+		List<RouteDetailsDto> rdDto=routeOpt.stream().map(r1 -> routedetailsConvertToDto(r1)).collect(Collectors.toList());
+		return rdDto;
+	}
+
+
+
 
 
 
