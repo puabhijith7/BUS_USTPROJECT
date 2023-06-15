@@ -61,4 +61,16 @@ public class ScheduleController {
         scheduleService.save(schedule);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
+
+    @GetMapping("/schedule/id/{scheduleId}")
+    public ScheduleDto getSchedle(@PathVariable int scheduleId){
+
+
+        Optional<Schedule> schOpt = scheduleService.getbyScheduleId(scheduleId);
+//        if(schOpt.isEmpty())
+//            throw new BusNotFoundException();
+        Schedule schedule = schOpt.get();
+        ScheduleDto dto = convertToDto(schedule);
+        return dto;
+    }
 }

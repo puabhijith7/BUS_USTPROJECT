@@ -11,6 +11,7 @@
         <module name="eureka-server" />
         <module name="spring-boot-jwt" />
         <module name="bus-schedule" />
+        <module name="bus-booking" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Security" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
+      <module name="bus-booking" options="-parameters" />
       <module name="bus-schedule" options="-parameters" />
       <module name="bus-service1" options="-parameters" />
       <module name="eureka-server" options="-parameters" />

@@ -16,6 +16,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 @Service
 public class ScheduleService {
@@ -177,6 +178,11 @@ public class ScheduleService {
         }
         return f;
 
+    }
+
+    public Optional<Schedule> getbyScheduleId(int scheduleId)
+    {
+        return scheduleRepo.findById(scheduleId);
     }
 }
 
