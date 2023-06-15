@@ -135,9 +135,11 @@ public class ScheduleService {
         List<Integer> busid = new ArrayList<Integer>();
         scheuleList.forEach(s1 -> r.add(s1.getRouteId()));
         List<Integer> routeIdfrombusfeign = busServiceFeign.getrouteIdfromBusService(source, destination);
+       // System.out.println(routeIdfrombusfeign);
         if (routeIdfrombusfeign.isEmpty()) {
             throw new ScheduleNotFoundException();
         }
+
         for (Integer value : r) {
             for (Integer value1 : routeIdfrombusfeign) {
                 if (value == value1) {
@@ -152,22 +154,25 @@ public class ScheduleService {
         {
             rdto=busServiceFeign.getrouteDetailsByRouteId(routeid.get(i));
             farePerKm=busServiceFeign.getFare(routeid.get(i));
+         //   System.out.println(farePerKm);
             for(int j=0;j<rdto.size();j++)
             {
                 if(Objects.equals(rdto.get(j).getHault(), source))
                 {
                     sourceDist=rdto.get(j).getDistFromSource();
-                   // System.out.println(sourceDist);
+                    System.out.println(sourceDist);
 
                 }
                 if(Objects.equals(rdto.get(j).getHault(), destination))
                 {
 
                     destinationDist=rdto.get(j).getDistFromSource();
-                 //   System.out.println(destinationDist);
+                    System.out.println(destinationDist);
                 }
             }
+            System.out.println((destinationDist-sourceDist)*farePerKm);
             f.add((float) ((destinationDist-sourceDist)*farePerKm));
+
 
         }
         return f;

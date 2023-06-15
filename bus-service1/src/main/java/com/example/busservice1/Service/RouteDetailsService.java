@@ -30,7 +30,9 @@ public class RouteDetailsService{
 
 	public List<Integer> findDistinctRouteIdsByHault(String source,String destination) {
 		// TODO Auto-generated method stub
+		System.out.println(routeDetailsRepo.findDistinctRouteIdsByHault(source,destination));
 		return routeDetailsRepo.findDistinctRouteIdsByHault(source,destination);
+
 	}
 
 	public List<RouteDetails> getall() {

@@ -35,9 +35,10 @@ public class RouteDetailsController {
 	    public List<Integer> findDistinctRouteIdsByHault(@PathVariable String source,@PathVariable String destination)
 	    {
 	    	List<Integer> list=routeDetailsService.findDistinctRouteIdsByHault(source,destination);
-//			if(list.isEmpty())
-//				throw new RouteDetialsNotFoundException();
-	    	return list;
+//
+	    	if(list.isEmpty())
+				throw new RouteDetialsNotFoundException();
+			return list;
 	    }
 
 
