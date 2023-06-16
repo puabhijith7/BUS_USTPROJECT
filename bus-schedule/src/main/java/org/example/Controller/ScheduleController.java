@@ -2,7 +2,9 @@ package org.example.Controller;
 
 
 import org.example.Dto.ScheduleDto;
+import org.example.Dto.SetSeatStatus;
 import org.example.Model.Schedule;
+import org.example.Model.Seat;
 import org.example.Service.ScheduleService;
 import org.example.Wrapper.BusDto;
 import org.springframework.http.HttpStatus;
@@ -73,4 +75,23 @@ public class ScheduleController {
         ScheduleDto dto = convertToDto(schedule);
         return dto;
     }
+    @GetMapping("seat/{scheduleId}")
+    public List<Seat> getseatsbyScheduleId(@PathVariable int scheduleId)
+    {
+        return scheduleService.getseatsbyScheduleId(scheduleId);
+    }
+    @PostMapping("seat/status")
+    public void setseatstatus(@RequestBody SetSeatStatus sss)
+    {
+        Seat s1=scheduleService.getseatstatus(sss);
+        Seat s2= scheduleService.getseatstatus1(sss);
+        scheduleService.setstatus(s1,s2);
+
+
+
+    }
+
+
+
+
 }

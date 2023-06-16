@@ -1,6 +1,8 @@
 package org.example.Service;
 
 import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.transaction.Transactional;
+import org.example.Dto.SetSeatStatus;
 import org.example.Exception.ScheduleNotFoundException;
 import org.example.Feign.BusServiceFeign;
 import org.example.Model.Schedule;
@@ -118,11 +120,11 @@ public class ScheduleService {
                Seat seat=new Seat();
                System.out.println(l.get(0));
                System.out.println(l.get(1));
-               seat.setSchedule_id(schedule.getScheduleId());
+               seat.setScheduleId(schedule.getScheduleId());
                seat.setfHault(fhault);
                seat.settHault(thault);
                seat.setStatus(0);
-               seat.setSeat_no(currSeat);
+               seat.setSeatNo(currSeat);
                seatList.add(seat);
            }
         }
@@ -184,5 +186,49 @@ public class ScheduleService {
     {
         return scheduleRepo.findById(scheduleId);
     }
+
+    public List<Seat> getseatsbyScheduleId(int id)
+    {
+        return seatRepo.findByScheduleId(id);
+    }
+
+
+
+    public Seat getseatstatus(SetSeatStatus sss) {
+        List<Seat> seatsByFhault = seatRepo.findByFhault(sss.fhault());
+        List<Seat> seatsByScheduleAndSeatNo = seatRepo.findByScheduleIdAndSeatNo(sss.scheduleId(), sss.seatNo());
+
+        for (Seat seatByfhault : seatsByFhault) {
+            for (Seat seat : seatsByScheduleAndSeatNo) {
+                if (seatByfhault.equals(seat)) {
+                    return seatByfhault; // Return the first common seat found
+                }
+            }
+        }
+        return null; // No common seat found
+    }
+
+    public Seat getseatstatus1(SetSeatStatus sss) {
+        List<Seat> seatsByThault = seatRepo.findByThault(sss.thault());
+        List<Seat> seatsByScheduleAndSeatNo = seatRepo.findByScheduleIdAndSeatNo(sss.scheduleId(), sss.seatNo());
+
+        for (Seat seatBythault : seatsByThault) {
+            for (Seat seat : seatsByScheduleAndSeatNo) {
+                if (seatBythault.equals(seat)) {
+                    return seatBythault; // Return the first common seat found
+                }
+            }
+        }
+        return null; // No common seat found
+    }
+
+    @Transactional
+    public void setstatus(Seat s1, Seat s2) {
+         seatRepo.setstatus(s1.getSeatId(),s2.getSeatId());
+    }
 }
+
+
+
+
 

@@ -8,36 +8,38 @@ import jakarta.persistence.*;
 public class Seat {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int seat_id;
-    private int  seat_no;
+    private int seatId;
+    private int  seatNo;
+    private int status;//1-booked 0-avaliable
+    private String fhault;
+    private String thault;
+    private int scheduleId;
 
-    public Seat(int seat_id, int seat_no, int status, String fHault, String tHault, int schedule_id) {
-        this.seat_id = seat_id;
-        this.seat_no = seat_no;
+    public Seat(int seatId, int seatNo, int status, String fhault, String thault, int scheduleId) {
+        this.seatId = seatId;
+        this.seatNo = seatNo;
         this.status = status;
-        this.fHault = fHault;
-        this.tHault = tHault;
-        this.schedule_id = schedule_id;
+        this.fhault = fhault;
+        this.thault = thault;
+        this.scheduleId = scheduleId;
+
     }
     public Seat(){}
 
-    private int status;//1-booked 0-avaliable
-   private String fHault;
-
-    public int getSeat_id() {
-        return seat_id;
+    public int getSeatId() {
+        return seatId;
     }
 
-    public void setSeat_id(int seat_id) {
-        this.seat_id = seat_id;
+    public void setSeatId(int seatId) {
+        this.seatId = seatId;
     }
 
-    public int getSeat_no() {
-        return seat_no;
+    public int getSeatNo() {
+        return seatNo;
     }
 
-    public void setSeat_no(int seat_no) {
-        this.seat_no = seat_no;
+    public void setSeatNo(int seatNo) {
+        this.seatNo = seatNo;
     }
 
     public int getStatus() {
@@ -49,30 +51,26 @@ public class Seat {
     }
 
     public String getfHault() {
-        return fHault;
+        return fhault;
     }
 
     public void setfHault(String fHault) {
-        this.fHault = fHault;
+        this.fhault = fHault;
     }
 
     public String gettHault() {
-        return tHault;
+        return thault;
     }
 
     public void settHault(String tHault) {
-        this.tHault = tHault;
+        this.thault = tHault;
     }
 
-    public int getSchedule_id() {
-        return schedule_id;
+    public int getScheduleId() {
+        return scheduleId;
     }
 
-    public void setSchedule_id(int schedule_id) {
-        this.schedule_id = schedule_id;
+    public void setScheduleId(int scheduleId) {
+        this.scheduleId = scheduleId;
     }
-
-    private String tHault;
-    private int schedule_id;
-
 }

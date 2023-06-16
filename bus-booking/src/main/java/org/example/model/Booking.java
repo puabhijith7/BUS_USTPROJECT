@@ -14,7 +14,7 @@ public class Booking {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int bookingId;
     private int userId;
-    private LocalTime bookingTime;
+    private String bookingTime;
     private LocalDate bookingDate;
 
     private int scheduleId;
@@ -25,7 +25,7 @@ public class Booking {
 
     public Booking(){}
 
-    public Booking(int bookingId, int userId, LocalTime bookingTime, LocalDate bookingDate, int scheduleId, String source, String destination, int noOfTickets,float fare) {
+    public Booking(int bookingId, int userId, String bookingTime, LocalDate bookingDate, int scheduleId, String source, String destination, int noOfTickets,float fare) {
         this.bookingId = bookingId;
         this.userId = userId;
         this.bookingTime = bookingTime;
@@ -53,11 +53,11 @@ public class Booking {
         this.userId = userId;
     }
 
-    public LocalTime getBookingTime() {
+    public String getBookingTime() {
         return bookingTime;
     }
 
-    public void setBookingTime(LocalTime bookingTime) {
+    public void setBookingTime(String bookingTime) {
         this.bookingTime = bookingTime;
     }
 

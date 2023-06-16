@@ -3,6 +3,8 @@ package org.example.Service;
 import jakarta.transaction.Transactional;
 import org.example.Dto.PassengerDto;
 import org.example.Dto.RequestDto;
+import org.example.Dto.SetSeatStatus;
+import org.example.Feign.BusScheduleFeign;
 import org.example.Repo.BookingRepo;
 import org.example.Repo.TicketsRepo;
 import org.example.model.Booking;
@@ -11,7 +13,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.ZoneId;
 import java.util.List;
 
 @Service
@@ -22,11 +26,15 @@ public class BookingService {
 
     @Autowired
     private TicketsRepo ticketsRepo;
+    @Autowired
+    BusScheduleFeign busScheduleFeign;
     @Transactional
     public Integer save(RequestDto requestDto) {
         Booking booking = new Booking();
         booking.setBookingDate(LocalDate.now());
-        booking.setBookingTime(LocalTime.now());
+       // ZoneId zoneId = ZoneId.of("Asia/Kolkata");
+      //  LocalDateTime localDateTime = LocalDateTime.now();
+        booking.setBookingTime(LocalTime.now().toString());
         booking.setSource(requestDto.source());
         booking.setDestination(requestDto.destination());
         booking.setScheduleId(requestDto.scheduleId());
@@ -51,7 +59,16 @@ public class BookingService {
             t.setSeatNumber(seatNoList.get(i));
             t.setDate(LocalDate.parse(date));
             ticketsRepo.save(t);
+            System.out.println("hello");
+            setseatstatus(t,booking);
         }
+    }
+
+
+    public void setseatstatus(Tickets t, Booking booking) {
+        System.out.println("hai");
+        SetSeatStatus sss=new SetSeatStatus(t.getSeatNumber(),booking.getScheduleId(), booking.getSource(), booking.getDestination());
+        busScheduleFeign.setseatstatus(sss);
     }
 
 

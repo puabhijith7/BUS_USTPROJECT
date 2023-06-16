@@ -30,4 +30,6 @@ public class BookingController {
        int a= bookingService.save(requestDto);
        return ResponseEntity.status(HttpStatus.CREATED).body(a);
     }
+
+
 }
