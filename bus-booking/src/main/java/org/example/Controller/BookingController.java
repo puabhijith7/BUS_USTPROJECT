@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDate;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("api/v1/bookings")
 public class BookingController {
 
