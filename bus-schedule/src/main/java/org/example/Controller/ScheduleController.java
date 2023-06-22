@@ -3,6 +3,7 @@ package org.example.Controller;
 
 import org.example.Dto.ScheduleDto;
 import org.example.Dto.SetSeatStatus;
+import org.example.Exception.ScheduleNotFoundException;
 import org.example.Model.Schedule;
 import org.example.Model.Seat;
 import org.example.Service.ScheduleService;
@@ -65,28 +66,28 @@ public class ScheduleController {
     }
 
     @GetMapping("/schedule/id/{scheduleId}")
-    public ScheduleDto getSchedle(@PathVariable int scheduleId){
+    public ResponseEntity<ScheduleDto> getSchedule(@PathVariable int scheduleId){
 
 
         Optional<Schedule> schOpt = scheduleService.getbyScheduleId(scheduleId);
-//        if(schOpt.isEmpty())
-//            throw new BusNotFoundException();
+        if(schOpt.isEmpty())
+            throw new ScheduleNotFoundException();
         Schedule schedule = schOpt.get();
         ScheduleDto dto = convertToDto(schedule);
-        return dto;
+        return ResponseEntity.ok().body(dto);
     }
     @GetMapping("seat/{scheduleId}")
-    public List<Seat> getseatsbyScheduleId(@PathVariable int scheduleId)
+    public ResponseEntity<List<Seat>> getseatsbyScheduleId(@PathVariable int scheduleId)
     {
-        return scheduleService.getseatsbyScheduleId(scheduleId);
+        return ResponseEntity.ok().body(scheduleService.getseatsbyScheduleId(scheduleId));
     }
     @PostMapping("seat/status")
-    public void setseatstatus(@RequestBody SetSeatStatus sss)
+    public ResponseEntity<?> setseatstatus(@RequestBody SetSeatStatus sss)
     {
         Seat s1=scheduleService.getseatstatus(sss);
         Seat s2= scheduleService.getseatstatus1(sss);
         scheduleService.setstatus(s1,s2);
-
+        return ResponseEntity.ok().build();
 
 
     }

@@ -68,16 +68,19 @@ public class RouteController {
 		    {
 		    	Optional<Route> routeOpt = routeService.getbyrouteId(route.getRouteId());
 		        if(routeOpt.isEmpty())
-		        	throw new RouteNotFoundException();		        Route saved = routeConvertToEntity(route);
+		        	throw new RouteNotFoundException();
+				Route saved = routeConvertToEntity(route);
 		        Route save = routeService.save(saved);
 		        return ResponseEntity.status(HttpStatus.OK).body(routeConvertToDto(save));
 		    	 
 		    }
 		   @GetMapping("/route/fare/{routeId}")
-	      public Integer getFare(@PathVariable int routeId)
+	      public ResponseEntity<Integer> getFare(@PathVariable int routeId)
 		   {
-			   return routeService.getFare(routeId);
+               int a=routeService.getFare(routeId);
+			   return  ResponseEntity.ok().body(a);
 		   }
+
 
 		    
 	

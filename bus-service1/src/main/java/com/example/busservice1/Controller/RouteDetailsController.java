@@ -32,13 +32,13 @@ public class RouteDetailsController {
 		 }
 	 
 	  @GetMapping("/routeDetails/r/{source}/{destination}")
-	    public List<Integer> findDistinctRouteIdsByHault(@PathVariable String source,@PathVariable String destination)
+	    public ResponseEntity<List<Integer>> findDistinctRouteIdsByHault(@PathVariable String source,@PathVariable String destination)
 	    {
 	    	List<Integer> list=routeDetailsService.findDistinctRouteIdsByHault(source,destination);
 //
 	    	if(list.isEmpty())
 				throw new RouteDetialsNotFoundException();
-			return list;
+			return  ResponseEntity.ok().body(list);
 	    }
 
 
@@ -104,42 +104,32 @@ public class RouteDetailsController {
 	    
 
 
-	    
-//	    @GetMapping("/routeDetails/{routeId}")
-//	    public String[] searchforStops(@PathVariable int routeId)
-//	    {
-//	    	List<RouteDetails> l=routeDetailsService.search(routeId);
-//	    	String[] a=new String[l.size()];
-//	    	for(int i=0;i<l.size();i++)
-//	    	{
-//	    		a[i]=l.get(i).getHault();
-//	    	}
-//	    	
-//	    	return  a;
-//	    }
+
 
 
 	  @GetMapping("/routeDetails/r/{routeId}")
-	 public List<Integer> searchforStopsbyRouteId(@PathVariable int routeId)
+	 public ResponseEntity<List<Integer>> searchforStopsbyRouteId(@PathVariable int routeId)
 	  {
-		  return(routeDetailsService.searchforStopsbyRouteId(routeId));
+
+		  List<Integer> list=routeDetailsService.searchforStopsbyRouteId(routeId);
+		  return ResponseEntity.ok().body(list);
 	  }
 
 	@GetMapping("/routeDetails/routeId/{routeId}")
-	public List<RouteDetailsDto> getrouteDetailsByRouteId(@PathVariable int routeId){
+	public ResponseEntity<List<RouteDetailsDto>> getrouteDetailsByRouteId(@PathVariable int routeId){
 
 
 		List<RouteDetails> routeOpt = routeDetailsService.getbyrouteId(routeId);
 		if(routeOpt.isEmpty())
 			throw new RouteDetialsNotFoundException();
 		List<RouteDetailsDto> rdDto=routeOpt.stream().map(r1 -> routedetailsConvertToDto(r1)).collect(Collectors.toList());
-		return rdDto;
+		return ResponseEntity.ok().body(rdDto);
 	}
 
 	@GetMapping("/routeDetails/all")
-	public List<String> getallstops()
+	public ResponseEntity<List<String>> getallstops()
 	{
-		return routeDetailsService.findDistinctHaults();
+		return ResponseEntity.ok().body(routeDetailsService.findDistinctHaults());
 	}
 
 

@@ -98,14 +98,14 @@ public class BusController {
     
     
     @PutMapping("/bus")
-    public ResponseEntity<BusDto> updatebus(@RequestBody BusDto bus)
+    public ResponseEntity<?> updatebus(@RequestBody BusDto bus)
     {
     	Optional<Bus> busOpt = busService.getbybusId(bus.getBusId());
         if(busOpt.isEmpty())
         	throw new BusNotFoundException();
         Bus savedbus = busConvertToEntity(bus);
-        Bus save = busService.save(savedbus);
-        return ResponseEntity.status(HttpStatus.OK).body(busConvertToDto(save));
+        busService.save(savedbus);
+        return ResponseEntity.ok().build();
     	 
     }
     @DeleteMapping("/bus/{busId}")
@@ -132,27 +132,7 @@ public class BusController {
     
     
     
-   
-//    @GetMapping("/route/routes/")
-//    public  List<Integer> getroutes(@RequestBody Route route){
-//    	List<Integer> s=routeService.findRouteIdsBySource(route.getSource());
-//    	List<Integer> d=routeService.findRouteIdsByDest(route.getDestination());
-//    	List<Integer> a=new ArrayList<Integer>();
-//    	
-//    	for(int i=0;i<s.size();i++)
-//    	{
-//    		for(int j=0;j<d.size();j++)
-//    		{
-//    			if(s.get(i)==d.get(j))
-//    			{
-//    				a.add(s.get(i));
-//    			}
-//    		}
-//    	}
-//    	return a;
-//    	
-//    	
-//    }
+
   
 
 }
