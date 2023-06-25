@@ -1,5 +1,5 @@
-package org.example.Exception;
-
-public class ScheduleNotFoundException extends RuntimeException{
-    public  ScheduleNotFoundException(){}
-}
+//package org.example.Exception;
+//
+//public class ScheduleNotFoundException extends RuntimeException{
+//    public  ScheduleNotFoundException(){}
+//}

@@ -12,7 +12,7 @@ public class Booking {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int bookingId;
+    private int bookingId = 10000;
     private int userId;
     private String bookingTime;
     private LocalDate bookingDate;

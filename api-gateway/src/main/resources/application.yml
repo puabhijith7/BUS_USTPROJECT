@@ -1,0 +1,50 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - DELETE
+              - HEAD
+              - OPTIONS
+              - PUT
+            allowedHeaders:
+              - "*"
+              - "Authorization"
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+        - AddResponseHeader=Access-Control-Allow-Origin, *
+      routes:
+        - id: BUSSERVICE
+          uri: lb://BUSSERVICE
+          predicates:
+            - Path=/api/v1/buses/**
+        - id: BUSSCHEDULE
+          uri: lb://BUSSCHEDULE
+          predicates:
+            - Path=/api/v1/schedules/**
+        - id: BUSBOOKING
+          uri: lb://BUSBOOKING
+          predicates:
+            - Path=/api/v1/bookings/**
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: TRACE

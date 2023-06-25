@@ -3,11 +3,12 @@ package org.example.Controller;
 
 import org.example.Dto.ScheduleDto;
 import org.example.Dto.SetSeatStatus;
-import org.example.Exception.ScheduleNotFoundException;
+//import org.example.Exception.ScheduleNotFoundException;
 import org.example.Model.Schedule;
 import org.example.Model.Seat;
 import org.example.Service.ScheduleService;
 import org.example.Wrapper.BusDto;
+import org.example.exceptions.ScheduleNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -89,7 +91,14 @@ public class ScheduleController {
         scheduleService.setstatus(s1,s2);
         return ResponseEntity.ok().build();
 
-
+    }
+    @GetMapping("schedule/get")
+    public ResponseEntity<List<ScheduleDto>> getAllSchedules(){
+        List<Schedule> scheduleList = scheduleService.getall();
+        if(scheduleList.isEmpty())
+            throw new ScheduleNotFoundException();
+        List<ScheduleDto> scheduleDtoList=scheduleList.stream().map(sch -> convertToDto(sch)).collect(Collectors.toList());
+        return ResponseEntity.status(HttpStatus.OK).body(scheduleDtoList);
     }
 
 

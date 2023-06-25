@@ -3,7 +3,7 @@ package org.example.Service;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.transaction.Transactional;
 import org.example.Dto.SetSeatStatus;
-import org.example.Exception.ScheduleNotFoundException;
+//import org.example.Exception.ScheduleNotFoundException;
 import org.example.Feign.BusServiceFeign;
 import org.example.Model.Schedule;
 import org.example.Model.Seat;
@@ -11,6 +11,7 @@ import org.example.Repo.ScheduleRepo;
 import org.example.Repo.SeatRepo;
 import org.example.Wrapper.BusDto;
 import org.example.Wrapper.RouteDetailsDto;
+import org.example.exceptions.ScheduleNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -225,6 +226,9 @@ public class ScheduleService {
     @Transactional
     public void setstatus(Seat s1, Seat s2) {
          seatRepo.setstatus(s1.getSeatId(),s2.getSeatId());
+    }
+    public List<Schedule> getall() {
+        return scheduleRepo.findAll();
     }
 }
 

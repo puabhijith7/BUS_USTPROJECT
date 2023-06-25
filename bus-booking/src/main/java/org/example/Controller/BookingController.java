@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -31,6 +32,13 @@ public class BookingController {
        int a= bookingService.save(requestDto);
        return ResponseEntity.status(HttpStatus.CREATED).body(a);
     }
+    @GetMapping("/booking")
+    public ResponseEntity<List<Booking>> getall()
+    {
+        List list=bookingService.getall();
+        return ResponseEntity.ok().body(list);
+    }
+
 
 
 }

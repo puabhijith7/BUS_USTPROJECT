@@ -72,4 +72,7 @@ public class BookingService {
     }
 
 
+    public List getall() {
+        return bookingRepo.findAll();
+    }
 }
