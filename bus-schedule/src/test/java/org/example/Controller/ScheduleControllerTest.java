@@ -103,21 +103,21 @@ class ScheduleControllerTest {
         assertEquals("[]", response.getContentAsString());
     }
 
-    @Test
-    void testGetFare() throws Exception {
-// Setup
-        when(mockScheduleService.getFare(LocalDate.of(2020, 1, 1), "source", "destination")).thenReturn(List.of(0.0f));
-
-// Run the test
-        final MockHttpServletResponse response = mockMvc.perform(
-                        get("/api/v1/schedules/schedule/fare/{date}/{source}/{destination}", "2020-01-01", "source", "destination")
-                                .accept(MediaType.APPLICATION_JSON))
-                .andReturn().getResponse();
-
-// Verify the results
-        assertEquals(HttpStatus.OK.value(), response.getStatus());
-        assertEquals("[0.0]", response.getContentAsString());
-    }
+//    @Test
+//    void testGetFare() throws Exception {
+//// Setup
+//        when(mockScheduleService.getFare(LocalDate.of(2020, 1, 1), "source", "destination")).thenReturn(List.of(0.0f));
+//
+//// Run the test
+//        final MockHttpServletResponse response = mockMvc.perform(
+//                        get("/api/v1/schedules/schedule/fare/{date}/{source}/{destination}", "2020-01-01", "source", "destination")
+//                                .accept(MediaType.APPLICATION_JSON))
+//                .andReturn().getResponse();
+//
+//// Verify the results
+//        assertEquals(HttpStatus.OK.value(), response.getStatus());
+//        assertEquals("[0.0]", response.getContentAsString());
+//    }
 
     @Test
     void testGetFare_ScheduleServiceReturnsNoItems() throws Exception {

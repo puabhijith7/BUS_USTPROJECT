@@ -4,6 +4,7 @@ package org.example.Controller;
 import org.example.Dto.ScheduleDto;
 import org.example.Dto.SetSeatStatus;
 //import org.example.Exception.ScheduleNotFoundException;
+import org.example.Dto.fareRunningtimeDto;
 import org.example.Model.Schedule;
 import org.example.Model.Seat;
 import org.example.Service.ScheduleService;
@@ -56,7 +57,7 @@ public class ScheduleController {
 
     //for FARE
     @GetMapping("/schedule/fare/{date}/{source}/{destination}")
-    public ResponseEntity<List<Float>> getFare(@PathVariable String date, @PathVariable String source, @PathVariable String destination) {
+    public ResponseEntity<List<fareRunningtimeDto>> getFare(@PathVariable String date, @PathVariable String source, @PathVariable String destination) {
         LocalDate date1 = LocalDate.parse(date);
         return ResponseEntity.ok().body(scheduleService.getFare(date1, source, destination));
     }

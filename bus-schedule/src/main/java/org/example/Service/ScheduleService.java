@@ -4,6 +4,7 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.transaction.Transactional;
 import org.example.Dto.SetSeatStatus;
 //import org.example.Exception.ScheduleNotFoundException;
+import org.example.Dto.fareRunningtimeDto;
 import org.example.Feign.BusServiceFeign;
 import org.example.Model.Schedule;
 import org.example.Model.Seat;
@@ -15,7 +16,9 @@ import org.example.exceptions.ScheduleNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.Clock;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -132,7 +135,7 @@ public class ScheduleService {
         seatRepo.saveAll(seatList);
     }
 
-    public List<Float> getFare(LocalDate date, String source, String destination) {
+    public List<fareRunningtimeDto> getFare(LocalDate date, String source, String destination) {
         List<Schedule> scheuleList = scheduleRepo.findByDate(date);
         List<Integer> r = new ArrayList<Integer>();
         List<Integer> routeid = new ArrayList<Integer>();
@@ -151,11 +154,14 @@ public class ScheduleService {
                 }
             }
         }
-        List<Float> f=new ArrayList<>();
+        List<fareRunningtimeDto> f=new ArrayList<>();
+
+        LocalTime t = null;
         int sourceDist=0,destinationDist=0,farePerKm=0;
         List<RouteDetailsDto> rdto=new ArrayList<>();
         for(int i=0;i<routeid.size();i++)
         {
+            fareRunningtimeDto f1 =new fareRunningtimeDto();
             rdto=busServiceFeign.getrouteDetailsByRouteId(routeid.get(i));
             farePerKm=busServiceFeign.getFare(routeid.get(i));
          //   System.out.println(farePerKm);
@@ -171,12 +177,18 @@ public class ScheduleService {
                 {
 
                     destinationDist=rdto.get(j).getDistFromSource();
+                    t=rdto.get(j).getRunningTime();
                     System.out.println(destinationDist);
                 }
             }
-            System.out.println((destinationDist-sourceDist)*farePerKm);
-            f.add((float) ((destinationDist-sourceDist)*farePerKm));
+           // System.out.println((destinationDist-sourceDist)*farePerKm);
+           // f.add((float) ((destinationDist-sourceDist)*farePerKm));
 
+            f1.setFare((float) ((destinationDist-sourceDist)*farePerKm));
+            f1.setRunningTime(t);
+            System.out.println(f1.getFare());
+            System.out.println(f1.getRunningTime());
+            f.add(f1);
 
         }
         return f;
