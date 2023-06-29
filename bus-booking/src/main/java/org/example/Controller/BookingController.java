@@ -3,6 +3,7 @@ package org.example.Controller;
 import org.example.Dto.BookingDto;
 import org.example.Dto.RequestDto;
 import org.example.Service.BookingService;
+import org.example.Service.EmailService;
 import org.example.model.Booking;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -38,6 +39,29 @@ public class BookingController {
         List list=bookingService.getall();
         return ResponseEntity.ok().body(list);
     }
+
+
+
+    //MAIL
+
+    @Autowired
+    private EmailService emailService;
+    @GetMapping("/email")
+    public String SendMail(@RequestBody  RequestDto rb)
+    {
+
+
+        String status
+                = emailService.sendSimpleMail(rb);
+
+
+
+
+
+        return status;
+    }
+
+
 
 
 

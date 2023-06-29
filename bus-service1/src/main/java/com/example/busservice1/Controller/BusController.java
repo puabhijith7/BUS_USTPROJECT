@@ -21,18 +21,18 @@ import com.example.busservice1.model.Bus;
 @RequestMapping("/api/v1/buses")
 public class BusController {
 
-    //hi
+
 	
     @Autowired
     private BusService busService;
 
     public BusDto busConvertToDto(Bus bus) {
-    	BusDto busDto = new BusDto(bus.getBusId(),bus.getBusNo(),bus.getRegNo(),bus.getEngineNo(), bus.getBusType(),bus.getBusName(), bus.getTotalSeats());
+    	BusDto busDto = new BusDto(bus.getBusId(),bus.getRegNo(),bus.getEngineNo(), bus.getBusType(),bus.getBusName(), bus.getTotalSeats());
     	return busDto;
     	}
     
     public Bus busConvertToEntity(BusDto bus) {
-    	Bus bus1 = new Bus(bus.getBusId(),bus.getBusNo(),bus.getRegNo(),bus.getEngineNo(), bus.getBusType(),bus.getBusName(), bus.getTotalSeats());
+    	Bus bus1 = new Bus(bus.getBusId(),bus.getRegNo(),bus.getEngineNo(), bus.getBusType(),bus.getBusName(), bus.getTotalSeats());
     	return bus1 ;
     	}
     

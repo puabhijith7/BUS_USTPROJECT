@@ -72,7 +72,7 @@ class ScheduleControllerTest {
     void testGetbyDateBus() throws Exception {
 // Setup
 // Configure ScheduleService.getbydateBus(...).
-        final List<BusDto> busDtos = List.of(new BusDto(0, 0, "regNo", "engineNo", "busType", "busName", 0));
+        final List<BusDto> busDtos = List.of(new BusDto(0, "regNo", "engineNo", "busType", "busName", 0));
         when(mockScheduleService.getbydateBus(LocalDate.of(2020, 1, 1), "source", "destination")).thenReturn(busDtos);
 
 // Run the test

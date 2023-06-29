@@ -58,7 +58,7 @@ class BusControllerTest {
         // Configure BusService.getbybusId(...).
         final Bus bus1 = new Bus();
         bus1.setBusId(0);
-        bus1.setBusNo(0);
+
         bus1.setRegNo("regNo");
         bus1.setEngineNo("engineNo");
         bus1.setBusType("busType");
@@ -86,7 +86,7 @@ class BusControllerTest {
         // Configure BusService.save(...).
         final Bus bus = new Bus();
         bus.setBusId(0);
-        bus.setBusNo(0);
+
         bus.setRegNo("regNo");
         bus.setEngineNo("engineNo");
         bus.setBusType("busType");
@@ -111,7 +111,7 @@ class BusControllerTest {
         // Configure BusService.getall(...).
         final Bus bus = new Bus();
         bus.setBusId(0);
-        bus.setBusNo(0);
+
         bus.setRegNo("regNo");
         bus.setEngineNo("engineNo");
         bus.setBusType("busType");
@@ -151,7 +151,7 @@ class BusControllerTest {
         // Configure BusService.getbybusId(...).
         final Bus bus1 = new Bus();
         bus1.setBusId(0);
-        bus1.setBusNo(0);
+
         bus1.setRegNo("regNo");
         bus1.setEngineNo("engineNo");
         bus1.setBusType("busType");
@@ -234,7 +234,7 @@ class BusControllerTest {
         // Configure BusService.getbybusId(...).
         final Bus bus1 = new Bus();
         bus1.setBusId(0);
-        bus1.setBusNo(0);
+
         bus1.setRegNo("regNo");
         bus1.setEngineNo("engineNo");
         bus1.setBusType("busType");

@@ -4,7 +4,7 @@ package org.example.Wrapper;
 public class BusDto {
 	
     private int busId ;
-    private int busNo;
+
     private String regNo;
     private String engineNo;
     private String busType;
@@ -14,9 +14,9 @@ public class BusDto {
 
     public BusDto() {}
 
-    public BusDto(int busId, int busNo, String regNo, String engineNo, String busType, String busName, int totalSeats) {
+    public BusDto(int busId,  String regNo, String engineNo, String busType, String busName, int totalSeats) {
         this.busId = busId;
-        this.busNo = busNo;
+
         this.regNo = regNo;
         this.engineNo = engineNo;
         this.busType = busType;
@@ -28,9 +28,7 @@ public class BusDto {
         return busId;
     }
 
-    public int getBusNo() {
-        return busNo;
-    }
+
 
     public String getRegNo() {
         return regNo;
@@ -56,9 +54,7 @@ public class BusDto {
         this.busId = busId;
     }
 
-    public void setBusNo(int busNo) {
-        this.busNo = busNo;
-    }
+
 
     public void setRegNo(String regNo) {
         this.regNo = regNo;

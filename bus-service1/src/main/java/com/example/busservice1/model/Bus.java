@@ -1,16 +1,15 @@
 package com.example.busservice1.model;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table
 public class Bus {
 	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int busId ;
-    private int busNo;
+
     private String regNo;
     private String engineNo;
     private String busType;
@@ -20,9 +19,9 @@ public class Bus {
 
     public Bus() {}
 
-    public Bus(int busId, int busNo, String regNo, String engineNo, String busType, String busName, int totalSeats) {
+    public Bus(int busId,  String regNo, String engineNo, String busType, String busName, int totalSeats) {
         this.busId = busId;
-        this.busNo = busNo;
+
         this.regNo = regNo;
         this.engineNo = engineNo;
         this.busType = busType;
@@ -34,9 +33,7 @@ public class Bus {
         return busId;
     }
 
-    public int getBusNo() {
-        return busNo;
-    }
+
 
     public String getRegNo() {
         return regNo;
@@ -62,9 +59,6 @@ public class Bus {
         this.busId = busId;
     }
 
-    public void setBusNo(int busNo) {
-        this.busNo = busNo;
-    }
 
     public void setRegNo(String regNo) {
         this.regNo = regNo;
