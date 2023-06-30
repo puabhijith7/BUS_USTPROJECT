@@ -1,11 +1,22 @@
 server:
   port: 9090
 
+
+
+
 spring:
   application:
     name: API-GATEWAY
   cloud:
     gateway:
+
+      httpclient:
+        pool:
+          type: fixed
+          max-connections: 1000
+          acquire-timeout: 7500
+          max-idle-time: 90s
+          max-life-time: 90s
       globalcors:
         cors-configurations:
           '[/**]':

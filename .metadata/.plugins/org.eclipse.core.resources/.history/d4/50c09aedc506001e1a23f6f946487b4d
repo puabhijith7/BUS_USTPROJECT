@@ -7,9 +7,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.busservice1.Repo.RouteDetailsRepository;
-import com.example.busservice1.model.Route;
-import com.example.busservice1.model.RouteDetails;
+import Repo.com.bus.RouteDetailsRepository;
+import model.com.bus.Route;
+import model.com.bus.RouteDetails;
 
 @Service
 public class RouteDetailsService{

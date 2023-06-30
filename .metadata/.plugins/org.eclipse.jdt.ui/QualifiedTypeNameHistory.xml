@@ -8,16 +8,16 @@
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
     <fullyQualifiedTypeName name="org.springframework.data.repository.query.Param"/>
-    <fullyQualifiedTypeName name="com.example.busservice1.dto.BusDto"/>
+    <fullyQualifiedTypeName name="dto.com.bus.BusDto"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
-    <fullyQualifiedTypeName name="com.example.busservice1.dto.RouteDto"/>
+    <fullyQualifiedTypeName name="dto.com.bus.RouteDto"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
-    <fullyQualifiedTypeName name="com.example.busservice1.dto.RouteDetailsDto"/>
+    <fullyQualifiedTypeName name="dto.com.bus.RouteDetailsDto"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-    <fullyQualifiedTypeName name="com.example.busservice1.Exception.BusAlreadyException"/>
-    <fullyQualifiedTypeName name="com.example.busservice1.Exception.BusNotFoundException"/>
-    <fullyQualifiedTypeName name="com.example.busservice1.Exception.RouteAlreadyExistException"/>
-    <fullyQualifiedTypeName name="com.example.busservice1.Exception.RouteNotFoundException"/>
-    <fullyQualifiedTypeName name="com.example.busservice1.Exception.RouteDetailsAlreadyExistException"/>
-    <fullyQualifiedTypeName name="com.example.busservice1.Exception.RouteDetialsNotFoundException"/>
+    <fullyQualifiedTypeName name="Exception.com.bus.BusAlreadyException"/>
+    <fullyQualifiedTypeName name="Exception.com.bus.BusNotFoundException"/>
+    <fullyQualifiedTypeName name="Exception.com.bus.RouteAlreadyExistException"/>
+    <fullyQualifiedTypeName name="Exception.com.bus.RouteNotFoundException"/>
+    <fullyQualifiedTypeName name="Exception.com.bus.RouteDetailsAlreadyExistException"/>
+    <fullyQualifiedTypeName name="Exception.com.bus.RouteDetialsNotFoundException"/>
 </qualifiedTypeNameHistroy>

@@ -3,7 +3,7 @@ package com.example.busservice1.Repo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.busservice1.model.Route;
+import model.com.bus.Route;
 @Repository
 public interface RouteRepository extends JpaRepository<Route,Integer> {
 }

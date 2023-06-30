@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.example.busservice1.Repo.BusRepository;
-import com.example.busservice1.model.Bus;
+import Repo.com.bus.BusRepository;
+import model.com.bus.Bus;
 
 @Service
 public class BusService{

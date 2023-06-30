@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.busservice1.Service.RouteDetailsService;
-import com.example.busservice1.dto.RouteDetailsDto;
-import com.example.busservice1.model.RouteDetails;
+import Service.com.bus.RouteDetailsService;
+import dto.com.bus.RouteDetailsDto;
+import model.com.bus.RouteDetails;
 
 @RestController
 @RequestMapping("/api/v1/buses")

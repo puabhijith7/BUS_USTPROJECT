@@ -9,12 +9,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.busservice1.Service.BusService;
-import com.example.busservice1.Service.RouteDetailsService;
-import com.example.busservice1.Service.RouteService;
-import com.example.busservice1.model.Bus;
-import com.example.busservice1.model.Route;
-import com.example.busservice1.model.RouteDetails;
+import Service.com.bus.BusService;
+import Service.com.bus.RouteDetailsService;
+import Service.com.bus.RouteService;
+import model.com.bus.Bus;
+import model.com.bus.Route;
+import model.com.bus.RouteDetails;
 
 @RestController
 @RequestMapping("/api/v1/buses")

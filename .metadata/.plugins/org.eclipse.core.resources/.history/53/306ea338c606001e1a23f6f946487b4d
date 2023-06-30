@@ -10,9 +10,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.busservice1.Service.BusService;
-import com.example.busservice1.dto.BusDto;
-import com.example.busservice1.model.Bus;
+import Service.com.bus.BusService;
+import dto.com.bus.BusDto;
+import model.com.bus.Bus;
 
 
 @RestController
