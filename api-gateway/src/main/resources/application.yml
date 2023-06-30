@@ -28,14 +28,29 @@ spring:
           uri: lb://BUSSERVICE
           predicates:
             - Path=/api/v1/buses/**
+          filters:
+            - AuthenticationFilter
+
+
         - id: BUSSCHEDULE
           uri: lb://BUSSCHEDULE
           predicates:
             - Path=/api/v1/schedules/**
+          filters:
+            - AuthenticationFilter
+
+
         - id: BUSBOOKING
           uri: lb://BUSBOOKING
           predicates:
             - Path=/api/v1/bookings/**
+          filters:
+            - AuthenticationFilter
+
+        - id: IDENTITY-SERVICE
+          uri: lb://IDENTITY-SERVICE
+          predicates:
+            - Path=/auth/**
 
 eureka:
   instance:

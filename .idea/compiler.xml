@@ -9,7 +9,7 @@
         <module name="bus-service1" />
         <module name="api-gateway" />
         <module name="eureka-server" />
-        <module name="spring-boot-jwt" />
+        <module name="identity-service" />
         <module name="bus-schedule" />
         <module name="bus-booking" />
       </profile>
@@ -17,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="EurekaServer" target="17" />
       <module name="Security" target="1.8" />
+      <module name="spring-boot-jwt" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -27,6 +28,7 @@
       <module name="bus-schedule" options="-parameters" />
       <module name="bus-service1" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="identity-service" options="-parameters" />
       <module name="spring-boot-jwt" options="-parameters" />
     </option>
   </component>
